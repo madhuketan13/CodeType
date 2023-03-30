@@ -1,0 +1,93 @@
+body {
+    background-color: #000000;
+    color: #ffffff;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.header {
+    text-align: center;
+}
+
+.title-2 {
+    animation: typing 5s steps(50);
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 24px;
+    margin: 0;
+    padding: 0 8px 0 0;
+    position: absolute;
+    left: 10px;
+    top: 10%;
+    transform: translateY(-50%);
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: white; }
+}
+
+@keyframes cursor {
+    0% {
+        border-color: rgb(255, 255, 255);
+    }
+    50% {
+        border-color: transparent;
+    }
+    100%{
+        border-color: rgb(255, 255, 255);
+    }
+}
+
+.terminal-container {
+    display: flex;
+    align-items: center;
+}
+
+.terminal-prompt {
+    color: orange;
+    margin-top: 40px;
+}
+
+.terminal-input {
+    background-color: transparent;
+    border: none;
+    color: #ffffff;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 16px;
+    margin-left: 5px;
+    margin-top: 40px;
+    outline: none;
+}
+
+
+h1.react,
+h1.c,
+h1.lx,
+h1.ts {
+  margin: 0 10px;
+  font-size: 18px;
+  animation: typing 10s steps(50);
+  animation-delay: 5s;
+  animation-fill-mode: forwards;
+  animation-name: typing;
+}
+
+h1.js {
+    margin-top: 100px;
+    margin-bottom: -5px;
+    font-size: 18px;
+    margin: 100px 0 0 10px;
+    animation: typing 10s steps(50);
+    animation-delay: 5s;
+    animation-fill-mode: forwards;
+    animation-name: typing;
+}
+
